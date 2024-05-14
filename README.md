@@ -22,12 +22,12 @@ The Matlab replication was confirmed on version XXXX, and also requires the foll
 
 ## Models
 
-Code for our simulations appears in the directory `simulations` which
-contains three subdirectories:
+Code for our simulations appears in the directory `models` which
+contains two files:
 
-  * `NAME1` contains code to replicate ...
-  * `NAME2` contains code to replicate ...
-  * `NAME3` contains code to replicate ...
+  * `NK_model_dynamic` contains code to solve the dynamic model appearing in Section 6 of the paper, producing both impulse response functions and the Monte Carlo simulated dataset.  Set seed 0 to reproduce the paper's results exactly.
+  * `NK_model_static` contains code to replicate the illustrative "AD-AS" figures in Section 2 and Appendix B.
+  * `NAME` contains code to replicate ...
   
 Comments on executing code here...
 
