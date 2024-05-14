@@ -20,7 +20,7 @@ The Matlab replication was confirmed on version XXXX, and also requires the foll
   * `Uhlig Toolkit`
   * `BEET Toolkit`
 
-## Simulations
+## Model Solutions
 
 Code for our simulations appears in the directory `simulations` which
 contains three subdirectories:
