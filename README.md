@@ -17,8 +17,8 @@ A full list of the `R` packages needed to replicate our results is as follows:
 
 The Matlab replication was confirmed on version XXXX, and also requires the following toolkits (which are included in the replication files):
 
-  * Uhlig Toolkit
-  * BEET Toolkit
+  * `Uhlig Toolkit`
+  * `BEET Toolkit`
 
 ## Simulations
 
