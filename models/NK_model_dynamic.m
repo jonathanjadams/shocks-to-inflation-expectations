@@ -100,7 +100,8 @@ ytitles={'i'};
 BEET_solve;
 
 irf_T = 100; %how long will the irfs be?
-BEET_irfs; %calculate IRFs (will generate some plots - these are not needed for replication)
+BEET_irf_plot = 0; %set to 1 to generate IRF plots
+BEET_irfs; %calculate IRFs
 
 BEET_sim; %simulate the economy 
 
