@@ -1,1 +1,7 @@
-# shocks-to-inflation-expectations
+# Shocks to Inflation Expectations: Replication Code
+
+INTRO INTRO
+
+# Files
+
+DESCRIBE DESCRIBE
