@@ -15,10 +15,10 @@ A full list of the `R` packages needed to replicate our results is as follows:
   * `etc.`
   * `etc.`
 
-The Matlab replication was confirmed on version XXXX, and also requires the following toolkits (which are included in the replication files):
+The Matlab replication was confirmed on version `2019a`, and also requires the following toolkits (which are included in the `Toolkits` folder):
 
-  * `Uhlig Toolkit`
-  * `BEET Toolkit`
+  * `Uhlig Toolkit` for solving DSGE models from [Harald Uhlig](https://home.uchicago.edu/~huhlig/js/Toolkit_4.3.zip "Uhlig")
+  * `BEET Toolkit` for solving models without rational expectations ([documented here](https://github.com/jonathanjadams/BEET))
 
 ## Models
 
