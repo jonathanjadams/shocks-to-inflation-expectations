@@ -20,6 +20,14 @@ The Matlab replication was confirmed on version `2019a`, and also requires the f
   * `Uhlig Toolkit` for solving DSGE models from [Harald Uhlig](https://home.uchicago.edu/~huhlig/js/Toolkit_4.3.zip "Uhlig")
   * `BEET Toolkit` for solving models without rational expectations ([documented here](https://github.com/jonathanjadams/BEET))
 
+## Replication Code Order and Run-times
+
+Paper tables and figures can be replicated by running codes in the following order:
+
+1. `NK_model_static` (10 seconds)
+2. `NK_model_dynamics` (10 seconds)
+3. `more here`...
+
 ## Models
 
 Code for our simulations appears in the directory `models` which
