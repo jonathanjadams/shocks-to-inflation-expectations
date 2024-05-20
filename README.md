@@ -6,14 +6,22 @@ This repository contains the replication package for the following paper:
 
 ## Required Software and Packages
 
-Estimation exercises were carried out in `R`.  Simulations were carried out in `Matlab` and analyzed in `R`.  All results are confirmed on `Windows` using `Matlab` version `2019a`, `R` version `PHILIP DOES R HAVE VERSIONS?`.
+Estimation exercises were carried out in `R`.  Simulations were carried out in `Matlab` and analyzed in `R`.  All results are confirmed on `Windows` using `Matlab` version `2019a`, `R` version 4.1.
 
 A full list of the `R` packages needed to replicate our results is as follows:
 
-  * `ggplot`
-  * `etc.`
-  * `etc.`
-  * `etc.`
+  * `BigVAR`
+  * `expm`
+  * `forecast`
+  * `ggplot2`
+  * `lpirfs` 
+  * `lubridate`
+  * `magrittr`
+  * `readxl`
+  * `tidyverse`
+  * `vars`
+  * `xtable`
+  * `zoo`
 
 The Matlab replication requires the following toolkits (which are included in the `Toolkits` folder):
 
@@ -41,5 +49,26 @@ To reproduce the Monte Carlo exercises, first simulate the model using `NK_model
 
 ## Empirical Analysis
 
+Datasets are in the folder `data`
 
-Datasets are somewhere.  Code is also somewhere.
+To reproduce the figures and tables in the paper, you should follow these steps
+ 1. Open `code/sessions/master.R`
+ 2. Edit line 16 so that root.dir refers to the location of this file on this system
+ 3. Run `code/sessions/master.R`. This takes a very long time, although should complete if left to run overnight on a modern laptop.
+ 4. The figures and tables in the paper are saved in folder called "output".
+ 5. To reset the outputs from the replication package, delete all the files and folders in: `graphs`, `tables`, `output`, and `model_solutions`. You can also delete the file `data/baseline_time_series.rdata`
+
+
+Here is a short oveview of master.R script. Numbers correspond to the sections used in the code
+
+ 0. Set up. The bulk of this is in defining the various different versions of the model used, which are described in the variable l.cases.  Sections 1-8 of the code then are contained within the main loop which iterates over these versions.
+ 1. Unpacks assorted details for the current model run.
+ 2. Creates the dataset used in the current model run.
+ 3. Estimates the reduced form of the VAR.
+ 4. Converts reduced form to structural form. Adds the local projection if required.
+ 5. Makes the IRFs and variance decompositions by bootstrap.
+ 6. Robustness checks. The rolling-window estimation takes a very long time.  If you want this to go faster, you can set n.boot in section 0 to a smaller number, eg. 100, and it will only take a couple of hours although the bootstrap will be less accurate.
+ 7.  Makes standard charts for this run.
+ 8.  Saves the current model run.
+ 9.  Tidies up. Makes charts which compare across runs, runs the model on the simulated data, and produces the charts/tables using narrative shocks. Finally, this copies all the figures used in the paper to the output folder and renames them for convenience.
+
