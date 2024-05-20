@@ -34,7 +34,7 @@ Paper tables and figures can be replicated by running codes in the following ord
 
 1. `NK_model_static` (10 seconds)
 2. `NK_model_dynamics` (10 seconds)
-3. `more here`...
+3. `code/sessions/master.R` (~10 hours) NB: Need to change the root directory to refer to local file structure (see "Empirical Analysis" below).
 
 ## Models
 
